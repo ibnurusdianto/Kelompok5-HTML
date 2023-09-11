@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML | Studi Kasus 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&display=swap');
+        body {
+            font-family: 'Inconsolata', monospace;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #555;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 0.5s;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .thumbnails {
+            display: block;
+            margin: 20px auto;
+            border: 10px solid #ddd;
+            border-radius: 100px;
+            padding: 5px;
+            width: 150px;
+            filter: drop-shadow(0 0 10px rgba(0, 140, 186, 0.5));
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .thumbnails:hover {
+            transform: scale(1.1);
+        }
+
+        .nama {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .nama:hover {
+            color: #008cbb;
+            transition: color 0.3s;
+        }
+
+        img:hover {
+            box-shadow: 0 0 5px rgba(0, 140, 186, 0.8);
+            filter: drop-shadow(0 0 15px rgba(0, 140, 186, 0.8));
+        }
+
+        img {
+            border: 10px solid #ddd;
+            border-radius: 10px;
+            padding: 5px;
+            width: 150px;
+            display: block;
+            margin: auto;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        li {
+            margin-left: 0;
+            transition: transform 0.3s;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            text-align: justify;
+            color: #555;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        p:hover {
+            transform: scale(1.02);
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            animation: fadeIn 0.5s;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+</head>
+<body>
+<!--Header awal-->
+<h1>Curiculum Vitae</h1>
+
+<!--Untuk photo disini saya menggunakan jenis thumbanils-->
+<img src="gambar/gambar.jpg" alt="gambar_thumbnails" class="thumbnails">
+
+<!--Nama-->
+<p class="nama">Nama : Ibnu Rusdianto</p>
+
+<!--paragaf-->
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, error laborum magni
+    numquam possimus soluta temporibus? Aliquid cumque delectus deleniti illum iusto quos
+    sequi sint soluta tempore voluptate! Alias blanditiis consequuntur debitis earum facilis
+    mollitia reiciendis ullam? Beatae cumque debitis dolore doloremque eaque enim eum ex
+    exercitationem expedita facilis hic illo labore libero magni minima neque, nesciunt nobis
+    nostrum, officia pariatur, rerum tenetur totam! Aliquam asperiores at corporis eaque eligendi
+    exercitationem, fugit incidunt libero maxime molestias, mollitia nobis placeat possimus quasi
+    repellat rerum sed tempora ut vero voluptatem. Atque consequuntur eaque eveniet excepturi fugit laborum
+    magnam porro provident? Aperiam consequuntur cum dicta earum eos excepturi illo ipsum labore maxime, nostrum
+    odio pariatur possimus praesentium quae reprehenderit rerum saepe, sed soluta ullam voluptatem. A beatae corporis,
+    culpa cum dicta eius enim fuga fugiat iste itaque libero magni maiores maxime mollitia nihil, nostrum obcaecati quam quia sed sequi sunt
+    totam unde voluptatum.</p>
+
+<!--Table Of Skill-->
+<table border="1" cellspacing="0">
+    <tr>
+        <td width="250px" height="75px">Education</td>
+        <td width="700px" height="75px">
+            <ul>
+                <li>SDN Patimura</li>
+                <li>SMPN 1 Pusakanagara</li>
+                <li>SMKN 2 Kota Bandung</li>
+                <li>Universitas Pasundan</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td width="250px" height="75px">Experience</td>
+        <td width="700px" height="75px">
+            <ul>
+                <li>Hack The Boo</li>
+                <li>National Cyber Week 2022</li>
+                <li>pingCTF 2022</li>
+                <li>SekaiCTF 2022</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td width="250px" height="75px">Achievement</td>
+        <td width="700px" height="75px">
+            <ul>
+                <li>- (Kalah)</li>
+                <li>- (Kalah)</li>
+                <li>- (Kalah)</li>
+                <li>- (Kalah)</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
